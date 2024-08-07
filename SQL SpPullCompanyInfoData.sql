@@ -1,5 +1,6 @@
 create procedure SpPullCompanyInfoData
 as
+--Fetching all records
 SELECT [FirstName]
       ,[LastName]
       ,[Country]
@@ -7,6 +8,7 @@ SELECT [FirstName]
 
 Execute SpPullCompanyInfoData
 
+--update table companyinfor
 update CompanyInfo
  set FirstName = 'Ayo'
  where FirstName = 'Mark'
