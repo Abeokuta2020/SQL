@@ -1,6 +1,6 @@
 create procedure SpPullEmployeeInfoData
 as
-
+--Fetching all records
 SELECT [FirstName]
       ,[LastName]
       ,[Employee]
@@ -8,7 +8,7 @@ SELECT [FirstName]
 
   execute  SpPullEmployeeInfoData
 
- 
+ --update Table
  update EmployeeInfo
  set FirstName = 'Ayo'
  where FirstName = 'John'
